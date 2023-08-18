@@ -81,7 +81,7 @@ class Inference:
                 stride=(step_size, 1),
                 padding=(window_size, 0),
             )
-            waveform_batch = waveform_batch.permute(2, 0, 1)
+        waveform_batch = waveform_batch.permute(2, 0, 1)
 
         return waveform_batch
 
